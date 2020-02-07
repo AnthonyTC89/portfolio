@@ -2,40 +2,19 @@ import React from 'react';
 // import { connect } from 'react-redux';
 // import { PropTypes } from 'prop-types';
 import Navbar from '../Components/Navbar';
-import defaultProfile from '../defaultProfile.json';
 import 'bootstrap/dist/css/bootstrap-grid.css';
+import Profile from '../Components/Profile';
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      profile: {},
-    };
-  }
+const Home = () => (
+  <>
+    <header><Navbar /></header>
+    <main>
+      <Profile />
+    </main>
+    <footer>footer</footer>
+  </>
+);
 
-  componentDidMount() {
-    this.setState({
-      profile: defaultProfile,
-    });
-  }
-
-  render() {
-    const { profile } = this.state;
-    return (
-      <>
-        <header>
-          <Navbar />
-        </header>
-        <main>
-          {profile.name}
-        </main>
-        <footer>
-          footer
-        </footer>
-      </>
-    );
-  }
-}
 
 // Home.propTypes = {
 //   session: PropTypes.object.isRequired,

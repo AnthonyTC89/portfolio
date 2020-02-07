@@ -1,0 +1,17 @@
+#Profile {
+  background: url("../Images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-profile {
+  border-radius: 50%;
+}
+
+.icon-social {
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.icon-social:hover {
+  filter: grayscale(0%);
+}

@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar';
 import Profile from '../Components/Profile';
 import AboutMe from '../Components/AboutMe';
 import Experience from '../Components/Experience';
-// import Projects from '../Components/Projects';
+import Projects from '../Components/Projects';
 
 const Home = () => (
   <>
@@ -12,7 +12,7 @@ const Home = () => (
       <Profile />
       <AboutMe />
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
     </main>
   </>
 );

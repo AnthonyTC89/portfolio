@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import './AboutMe.css';
 
 const AboutMe = () => (
-  <section className="container">
+  <section id="AboutMe" className="container">
     <h2>About Me</h2>
     <span>{profile.aboutMe}</span>
     <ul>

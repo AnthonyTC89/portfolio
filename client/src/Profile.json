@@ -32,7 +32,16 @@
       "title": "Events",
       "description": "Mobile App, Schedule events",
       "live": "https://react-rails-events.herokuapp.com/",
-      "source": "https://github.com/AnthonyTC89/react-rails-events"
+      "source": "https://github.com/AnthonyTC89/react-rails-events",
+      "pinned": true
+    },
+    {
+      "screnshot": "https://i.picsum.photos/id/659/200/200.jpg",
+      "title": "Calculator",
+      "description": "Calculator made on React",
+      "live": "https://develop.d1mt0f332rdrd4.amplifyapp.com/",
+      "source": "https://github.com/AnthonyTC89/react_calculator",
+      "pinned": true
     }
   ]
 }

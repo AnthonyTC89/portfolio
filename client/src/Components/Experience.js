@@ -4,7 +4,7 @@ import profile from '../Profile.json';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 
 const Experience = () => (
-  <section className="container">
+  <section id="Experience" className="container">
     <h2>Work Experience</h2>
     <div className="row">
       {profile.experience.map((exp) => (

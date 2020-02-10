@@ -10,5 +10,29 @@
   "twitter": "https://twitter.com/ptonypTC",
   "linkedin": "https://www.linkedin.com/in/anthony-tapia-cossio/",
   "github": "https://github.com/AnthonyTC89",
-  "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam totam ipsa officia laboriosam inventore voluptas architecto deleniti quaerat veniam et ab voluptates vel accusantium commodi sunt quam perspiciatis tenetur."
+  "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam totam ipsa officia laboriosam inventore voluptas architecto deleniti quaerat veniam et ab voluptates vel accusantium commodi sunt quam perspiciatis tenetur.",
+  "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"],
+  "experience": [
+    {
+      "date": "July 2012 - August 2013",
+      "company": "BanTotal",
+      "position": "Software Developer",
+      "goals": "Build functions according new requierements."
+    },
+    {
+      "date": "May 2016 - December 2018",
+      "company": "Andean University Nestor Caceres Velasquez",
+      "position": "Software Developer",
+      "goals": "Get, process and manage data."
+    }
+  ],
+  "projects": [
+    {
+      "screnshot": "https://i.picsum.photos/id/659/200/200.jpg",
+      "title": "Events",
+      "description": "Mobile App, Schedule events",
+      "live": "https://react-rails-events.herokuapp.com/",
+      "source": "https://github.com/AnthonyTC89/react-rails-events"
+    }
+  ]
 }

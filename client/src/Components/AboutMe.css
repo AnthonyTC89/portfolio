@@ -1,0 +1,17 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: inherit;
+  width: 90%;
+  margin: auto
+}
+li {
+  margin: 0.5rem auto;
+}
+li span {
+  border: 1px solid #373F51;
+  padding: 0.3rem 0.5rem;
+  margin: auto 0.5rem;
+  border-radius: 4px;
+}

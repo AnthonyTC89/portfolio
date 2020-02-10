@@ -43,5 +43,19 @@
       "source": "https://github.com/AnthonyTC89/react_calculator",
       "pinned": true
     }
+  ],
+  "education": [
+    {
+      "date": "Abril 2007 - December 2012",
+      "institution": "Santa Maria Catholic University",
+      "grade": "Bachelor Systems Engineering",
+      "goals": "Programming. Algorithms. Data Structures."
+    },
+    {
+      "date": "July 2019 - Current",
+      "institution": "Microverse",
+      "grade": "Web Developer",
+      "goals": "Full-Stack Development"
+    }
   ]
 }

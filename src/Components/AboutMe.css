@@ -1,3 +1,8 @@
+.row-about-me {
+  width: 90%;
+  margin: 1rem auto;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -9,9 +14,19 @@ ul {
 li {
   margin: 0.5rem auto;
 }
-li span {
-  border: 1px solid #373F51;
+li>span {
+  border: 1px solid #052369;
   padding: 0.3rem 0.5rem;
   margin: auto 0.5rem;
   border-radius: 4px;
+}
+
+li>span:hover {
+  border: 2px solid #052369;
+}
+
+@media (min-width: 768px) { 
+  .row-about-me {
+    width: 70%;
+  }
 }

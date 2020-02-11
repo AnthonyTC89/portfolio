@@ -1,6 +1,10 @@
 .row-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   width: 90%;
-  margin: 1rem auto;
+  height: 30rem;
 }
 
 ul {
@@ -9,7 +13,7 @@ ul {
   list-style: none;
   padding: inherit;
   width: 90%;
-  margin: auto
+  margin: 1rem auto;
 }
 li {
   margin: 0.5rem auto;

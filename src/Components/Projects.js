@@ -15,12 +15,14 @@ const Projects = () => {
             return null;
           }
           return (
-            <article key={uuidv4()} className="col-12">
+            <article key={uuidv4()} className="col-12 section-project">
               <img src={proj.screnshot} className="img-project" alt="img-screnshot" />
-              <h3>{proj.title}</h3>
-              <p>{proj.description}</p>
-              <a href={proj.live}>Live Demo</a>
-              <a href={proj.source}>Source</a>
+              <div>
+                <h3>{proj.title}</h3>
+                <p>{proj.description}</p>
+                <a href={proj.live}>Live Demo</a>
+                <a href={proj.source}>Source</a>
+              </div>
             </article>
           );
         })}

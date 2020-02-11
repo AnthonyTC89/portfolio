@@ -1,17 +1,26 @@
 #Profile {
-  background: url("../Images/Background.png");
+  /* background: url("../Images/Background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .img-profile {
   border-radius: 50%;
 }
 
+.icon-profile {
+  width: 1rem;
+}
+
 .icon-social {
   filter: grayscale(100%);
   transition: all 0.5s ease;
+  width: 2rem;
 }
 
 .icon-social:hover {
   filter: grayscale(0%);
+}
+
+.info-profile {
+  margin: 1rem auto;
 }

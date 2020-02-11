@@ -22,5 +22,4 @@
 /config/master.key
 
 # vscode config
-/.vscode
 /node_modules

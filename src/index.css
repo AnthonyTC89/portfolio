@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  
+
+  background: #F8F9Fa;
 }
 
 code {
@@ -13,5 +16,17 @@ code {
     monospace;
 }
 .container {
-  background: #F8F9Fa;
+
+  background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ /* 
+
+  background: #3E5151;  
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  
+  background: linear-gradient(to right, #DECBA4, #3E5151); */
+
+  margin: 1rem auto;
+  padding: 2rem auto;
 }

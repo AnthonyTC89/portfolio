@@ -18,34 +18,42 @@ const Profile = () => {
   const fullName = `${profile.name} ${profile.lastname}`;
   return (
     <section id="Profile" className="container">
-      <img src={url} className="img-profile" alt="img-profile" />
-      <h2>{fullName}</h2>
-      <h5>{profile.title}</h5>
-      <div>
-        <img src={iconEmailUrl} alt="icon-email" />
-        <a href={mailto}>{profile.email}</a>
-      </div>
-      <div>
-        <img src={iconPhoneUrl} alt="icon-phone" />
-        <span>{profile.phone}</span>
-      </div>
-      <div>
-        <img src={iconLocationUrl} alt="icon-location" />
-        <span>{profile.location}</span>
-      </div>
-      <div>
-        <a href={profile.facebook}>
-          <img src={iconFacebook} className="icon-social" alt="icon-facebook" />
-        </a>
-        <a href={profile.twitter}>
-          <img src={iconTwitter} className="icon-social" alt="icon-twitter" />
-        </a>
-        <a href={profile.linkedin}>
-          <img src={iconLinkedin} className="icon-social" alt="icon-linkedin" />
-        </a>
-        <a href={profile.github}>
-          <img src={iconGithub} className="icon-social" alt="icon-github" />
-        </a>
+      <div className="row">
+        <div className="col-12 col-sm-6">
+          <div className="info-profile">
+            <img src={url} className="img-profile" alt="img-profile" />
+            <h2>{fullName}</h2>
+            <h5>{profile.title}</h5>
+          </div>
+        </div>
+        <div className="col-12 col-sm-6">
+          <div className="info-profile">
+            <img src={iconEmailUrl} alt="icon-email" className="icon-profile" />
+            <a href={mailto}>{profile.email}</a>
+          </div>
+          <div className="info-profile">
+            <img src={iconPhoneUrl} alt="icon-phone" className="icon-profile" />
+            <span>{profile.phone}</span>
+          </div>
+          <div className="info-profile">
+            <img src={iconLocationUrl} alt="icon-location" className="icon-profile" />
+            <span>{profile.location}</span>
+          </div>
+          <div className="info-profile">
+            <a href={profile.facebook}>
+              <img src={iconFacebook} className="icon-social" alt="icon-facebook" />
+            </a>
+            <a href={profile.twitter}>
+              <img src={iconTwitter} className="icon-social" alt="icon-twitter" />
+            </a>
+            <a href={profile.linkedin}>
+              <img src={iconLinkedin} className="icon-social" alt="icon-linkedin" />
+            </a>
+            <a href={profile.github}>
+              <img src={iconGithub} className="icon-social" alt="icon-github" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,3 +1,10 @@
+.section-project {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+
 .img-project {
-  float: left;
+  max-width: 20rem;
+  width: 50%;
 }

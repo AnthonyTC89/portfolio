@@ -11,7 +11,7 @@
   "linkedin": "https://www.linkedin.com/in/anthony-tapia-cossio/",
   "github": "https://github.com/AnthonyTC89",
   "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam totam ipsa officia laboriosam inventore voluptas architecto deleniti quaerat veniam et ab voluptates vel accusantium commodi sunt quam perspiciatis tenetur.",
-  "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"],
+  "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript","Webpack", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"],
   "experience": [
     {
       "date": "July 2012 - August 2013",
@@ -28,19 +28,35 @@
   ],
   "projects": [
     {
-      "screnshot": "https://i.picsum.photos/id/659/200/200.jpg",
       "title": "Events",
       "description": "Mobile App, Schedule events",
       "live": "https://react-rails-events.herokuapp.com/",
       "source": "https://github.com/AnthonyTC89/react-rails-events",
+      "screenshots": [
+        "https://i.picsum.photos/id/659/200/200.jpg",
+        "https://i.picsum.photos/id/659/200/200.jpg"
+      ],
       "pinned": true
     },
     {
-      "screnshot": "https://i.picsum.photos/id/659/200/200.jpg",
+      "title": "Odonto App",
+      "description": "Web aplication where is showed the teeth and is possible to select each teeth to know the description of each face.",
+      "live": "https://raw.githack.com/AnthonyTC89/odonto_app_uap/develop/index.html",
+      "source": "https://github.com/AnthonyTC89/odonto_app_uap",
+      "screenshots": [
+        "https://raw.githubusercontent.com/AnthonyTC89/odonto_app_uap/develop/screenshots/odontoApp01.png",
+        "https://i.picsum.photos/id/659/200/200.jpg"
+      ],
+      "pinned": true
+    },
+    {
       "title": "Calculator",
       "description": "Calculator made on React",
       "live": "https://develop.d1mt0f332rdrd4.amplifyapp.com/",
       "source": "https://github.com/AnthonyTC89/react_calculator",
+      "screenshots": [
+        "https://i.picsum.photos/id/659/200/200.jpg"
+      ],
       "pinned": true
     }
   ],

@@ -17,6 +17,7 @@ ul {
   list-style: none;
   width: 80%;
   margin: 1rem auto;
+  padding: initial;
 }
 li {
   margin: 0.5rem auto;

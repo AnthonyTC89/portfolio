@@ -11,7 +11,7 @@ const Navbar = () => (
     <a className="navbar-brand" href="#Profile">Anthony</a>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-item nav-link" href="#Skills">About me</a>
+        <a className="nav-item nav-link" href="#AboutMe">About me</a>
         <a className="nav-item nav-link" href="#Experience">Experience</a>
         <a className="nav-item nav-link" href="#Projects">Projects</a>
         <a className="nav-item nav-link" href="#Education">Education</a>

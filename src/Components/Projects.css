@@ -8,3 +8,15 @@
   max-width: 20rem;
   width: 50%;
 }
+
+.header-projects {
+  padding-top: 5rem;
+}
+
+.link {
+  margin: 1rem;
+}
+
+.row-projects {
+  padding-bottom: 5rem;
+}

@@ -1,0 +1,19 @@
+.header-experience {
+  padding-top: 5rem;
+}
+
+.row-experience {
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.experience{
+  margin-top: 1rem;
+}
+
+.company {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

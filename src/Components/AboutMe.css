@@ -1,17 +1,20 @@
+.header-aboutMe {
+  padding-top: 5rem;
+}
+
 .row-about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
   width: 90%;
-  height: 30rem;
+  padding-bottom: 5rem;
 }
 
 ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: inherit;
   width: 80%;
   margin: 1rem auto;
 }

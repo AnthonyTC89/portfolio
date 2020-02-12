@@ -12,8 +12,14 @@
 }
 
 .company {
-  height: 4rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .company {
+    height: 7rem;
+  }
 }

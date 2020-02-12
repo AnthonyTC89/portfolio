@@ -6,8 +6,8 @@ import './AboutMe.css';
 
 const AboutMe = () => (
   <section id="AboutMe" className="container">
+    <h2 className="header-aboutMe">About Me</h2>
     <div className="row-about-me">
-      <h2>About Me</h2>
       <span>{profile.aboutMe}</span>
       <ul>
         {profile.techSkills.map((skill) => (

@@ -27,7 +27,7 @@ const Profile = () => {
         <div className="col-12 col-sm-6 col-info">
           <div className="info-profile">
             <img src={iconEmailUrl} alt="icon-email" className="icon-profile" />
-            <span><a href={mailto}>{profile.email}</a></span>
+            <span><a className="link-email" href={mailto}>{profile.email}</a></span>
           </div>
           <div className="info-profile">
             <img src={iconPhoneUrl} alt="icon-phone" className="icon-profile" />

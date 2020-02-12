@@ -1,11 +1,13 @@
 .row-profile {
-  height: 40rem;
   align-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .img-profile {
   border-radius: 50%;
   width: 70%;
+  margin-bottom: 1rem;
 }
 
 .icon-profile {
@@ -31,4 +33,13 @@
 }
 .col-info {
   margin: auto;
+}
+.link-email{
+  color: black;
+}
+@media (min-width: 768px) { 
+  .row-profile {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }

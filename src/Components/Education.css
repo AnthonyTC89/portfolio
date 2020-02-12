@@ -1,0 +1,16 @@
+.header-education {
+  padding-top: 5rem;
+}
+.row-education {
+  margin: auto;
+  padding-bottom: 5rem;
+}
+.education {
+  margin-top: 1rem;
+}
+.institution {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

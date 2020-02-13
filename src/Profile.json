@@ -33,8 +33,8 @@
       "live": "https://react-rails-events.herokuapp.com/",
       "source": "https://github.com/AnthonyTC89/react-rails-events",
       "screenshots": [
-        "https://i.picsum.photos/id/659/200/200.jpg",
-        "https://i.picsum.photos/id/659/200/200.jpg"
+        "https://raw.githubusercontent.com/AnthonyTC89/react-rails-events/develop/screenshots/01.png",
+        "https://raw.githubusercontent.com/AnthonyTC89/react-rails-events/develop/screenshots/02.png"
       ],
       "pinned": true
     },
@@ -45,7 +45,7 @@
       "source": "https://github.com/AnthonyTC89/odonto_app_uap",
       "screenshots": [
         "https://raw.githubusercontent.com/AnthonyTC89/odonto_app_uap/develop/screenshots/odontoApp01.png",
-        "https://i.picsum.photos/id/659/200/200.jpg"
+        "https://raw.githubusercontent.com/AnthonyTC89/odonto_app_uap/develop/screenshots/odontoApp02.png"
       ],
       "pinned": true
     },

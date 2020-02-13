@@ -1,8 +1,10 @@
 import React from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import uuidv4 from 'uuid/v4';
 import PropTypes from 'prop-types';
-import './Carousel.css';
+import './Slider.css';
 
-class Carousel extends React.Component {
+class Slider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,21 +35,17 @@ class Carousel extends React.Component {
     const { currentImage } = this.state;
     const { images } = this.props;
     return (
-      <div
-        className="slider"
-        onClick={this.handleClick}
-        onKeyUp={this.handleKeyUp}
-        role="button"
-        tabIndex={0}
-      >
-        <img className="img-project" src={images[currentImage]} alt="img-screnshot" />
-      </div>
+      <TransitionGroup className="slide-container" onClick={this.handleClick}>
+        <CSSTransition key={uuidv4()} timeout={1000} classNames="slide">
+          <img className="img-slide" src={images[currentImage]} alt="img-screnshot" />
+        </CSSTransition>
+      </TransitionGroup>
     );
   }
 }
 
-Carousel.propTypes = {
+Slider.propTypes = {
   images: PropTypes.array.isRequired,
 };
 
-export default Carousel;
+export default Slider;

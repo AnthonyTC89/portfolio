@@ -1,0 +1,21 @@
+.slide-enter {
+  opacity: 0;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.slide-exit {
+  display: none;
+}
+
+.slide-exit-done {
+  opacity: 0;
+}
+
+.img-slide {
+  max-width: 90%;
+  max-height: 90%;
+}

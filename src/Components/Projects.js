@@ -1,6 +1,6 @@
 import React from 'react';
 import uuidv4 from 'uuid/v4';
-import Carousel from './Carousel';
+import Slider from './Slider';
 import profile from '../Profile.json';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Projects.css';
@@ -17,7 +17,7 @@ const Projects = () => {
         return (
           <article key={uuidv4()} className="row row-project">
             <div className="col-12 col-sm-6">
-              <Carousel images={proj.screenshots} />
+              <Slider images={proj.screenshots} />
               {/* <img className="img-project" src={proj.screenshots[0]} alt="img-screnshot" /> */}
             </div>
             <div className="col-12 col-sm-6 info-project">

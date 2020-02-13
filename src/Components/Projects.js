@@ -18,17 +18,18 @@ const Projects = () => {
           <article key={uuidv4()} className="row row-project">
             <div className="col-12 col-sm-6">
               <Slider images={proj.screenshots} />
-              {/* <img className="img-project" src={proj.screenshots[0]} alt="img-screnshot" /> */}
             </div>
             <div className="col-12 col-sm-6 info-project">
               <h3>{proj.title}</h3>
               <p>{proj.description}</p>
-              <a className="link" href={proj.live} target="_blank" rel="noopener noreferrer">
-                Live Demo
-              </a>
-              <a className="link" href={proj.source} target="_blank" rel="noopener noreferrer">
-                Source
-              </a>
+              <div>
+                <a className="link" href={proj.live} target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
+                <a className="link" href={proj.source} target="_blank" rel="noopener noreferrer">
+                  Source
+                </a>
+              </div>
             </div>
           </article>
         );

@@ -55,7 +55,8 @@
       "live": "https://develop.d1mt0f332rdrd4.amplifyapp.com/",
       "source": "https://github.com/AnthonyTC89/react_calculator",
       "screenshots": [
-        "https://i.picsum.photos/id/659/200/200.jpg"
+        "https://raw.githubusercontent.com/AnthonyTC89/react_calculator/develop/screenshots/01.png",
+        "https://raw.githubusercontent.com/AnthonyTC89/react_calculator/develop/screenshots/02.png"
       ],
       "pinned": true
     }

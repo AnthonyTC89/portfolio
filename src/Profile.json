@@ -14,10 +14,10 @@
   "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript","Webpack", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"],
   "experience": [
     {
-      "date": "July 2012 - August 2013",
+      "date": "July 2011 - June 2012",
       "company": "BanTotal",
       "position": "Software Developer",
-      "goals": "Build functions according new requierements."
+      "goals": "Build functions according to new requirements."
     },
     {
       "date": "May 2016 - December 2018",

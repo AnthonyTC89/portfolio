@@ -1,17 +1,21 @@
 {
-  "name": "Anthony",
-  "lastname": "Tapia Cossio",
-  "email": "ptonyptc@gmail.com",
-  "title": "Remote Web Developer",
-  "subTitle": "Full-Stack",
-  "phone": "(+51) 958-990-875",
-  "location": "Arequipa, Peru",
-  "facebook": "https://www.facebook.com/anthonytapiac",
-  "twitter": "https://twitter.com/ptonypTC",
-  "linkedin": "https://www.linkedin.com/in/anthony-tapia-cossio/",
-  "github": "https://github.com/AnthonyTC89",
-  "aboutMe": "I'm available. I'm looking for a remote job like a web developer. I have a lot of experience programming especially on back-end. I like new challenges, everything could be achieved step by step. I want to help people to make their live or business easier.",
-  "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript","Webpack", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"],
+  "information": {
+    "name": "Anthony",
+    "lastname": "Tapia Cossio",
+    "email": "ptonyptc@gmail.com",
+    "title": "Remote Web Developer",
+    "subTitle": "Full-Stack",
+    "phone": "(+51) 958-990-875",
+    "location": "Arequipa, Peru",
+    "facebook": "https://www.facebook.com/anthonytapiac",
+    "twitter": "https://twitter.com/ptonypTC",
+    "linkedin": "https://www.linkedin.com/in/anthony-tapia-cossio/",
+    "github": "https://github.com/AnthonyTC89"
+  },
+  "aboutMe": {
+    "fulltext": "I'm available. I'm looking for a remote job like a web developer. I have a lot of experience programming especially on back-end. I like new challenges, everything could be achieved step by step. I want to help people to make their live or business easier.",
+    "techSkills": ["HTML", "CSS", "Bootstrap", "JavaScript","Webpack", "React", "Redux", "Jest", "Ruby", "RoR", "RailsAPI", "Rspec", "SQL", "MySql", "PostgreSQL"]
+  },
   "experience": [
     {
       "date": "July 2011 - June 2012",

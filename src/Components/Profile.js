@@ -1,8 +1,7 @@
 import React from 'react';
-// import axios from 'axios';
-import { information } from '../Profile.json';
+import axios from 'axios';
 import imageProfile from '../Images/imageProfile.png';
-import { getCollection } from '../api';
+import { information } from '../Profile.json';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Profile.css';
 
@@ -13,11 +12,11 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
-    this.getInformation();
+    this.getData();
   }
 
-  async getInformation() {
-    await getCollection('information')
+  async getData() {
+    await axios.get('api/information', { withCredentials: true })
       .then((response) => {
         this.setState(response.data[0]);
       })

@@ -1,15 +1,11 @@
 import axios from 'axios';
 
-const getCollection = async (collection) => {
-  return axios.get(`api/${collection}`, { withCredentials: true })
-      .then((response) => {
-        console.log('response: ', response);
-        return response.data;
-      })
-      .catch((error) => {
-        console.log('error: ', error);
-        return error;
-      });
-}
+const getCollection = (collection) => {
+  axios.get(`api/${collection}`, { withCredentials: true });
+};
 
-export { getCollection };
+const delDocument = (collection, id) => {
+  console.log('delete in dev', collection, id);
+};
+
+export { getCollection, delDocument };

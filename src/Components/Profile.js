@@ -1,24 +1,29 @@
 import React from 'react';
+// import axios from 'axios';
 import { information } from '../Profile.json';
 import imageProfile from '../Images/imageProfile.png';
-// import { getCollection } from '../api';
+import { getCollection } from '../api';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Profile.css';
 
 class Profile extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = information;
   }
 
   componentDidMount() {
-    // const information = getCollection('information');
-    // const { name, lastname, email, title, subTitle, phone, 
-    //   location, facebook, twitter, linkedin, github } = information;
-    // this.setState({
-    //   name, lastname, email, title, subTitle, phone, 
-    //   location, facebook, twitter, linkedin, github
-    // })
+    this.getInformation();
+  }
+
+  async getInformation() {
+    await getCollection('information')
+      .then((response) => {
+        this.setState(response.data[0]);
+      })
+      .catch(() => {
+        this.setState(information);
+      });
   }
 
   render() {
@@ -30,7 +35,7 @@ class Profile extends React.Component {
     const iconLinkedin = 'https://img.icons8.com/color/48/000000/linkedin.png';
     const iconGithub = 'https://img.icons8.com/material-sharp/48/000000/github.png';
 
-    const { name, lastname, email, title, phone, 
+    const { name, lastname, email, title, phone,
       location, facebook, twitter, linkedin, github } = this.state;
 
     const mailto = `mailto: ${email}`;
@@ -78,7 +83,6 @@ class Profile extends React.Component {
       </section>
     );
   }
-  
-};
+}
 
 export default Profile;

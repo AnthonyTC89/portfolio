@@ -2,7 +2,7 @@
   <h1 align="center">Portfolio</h1>
 
   <p align="center">
-    Project Create with React
+    Project Create with the Stack MERN
     <br>
     <br>
     <a href="https://portfolio-anthony.herokuapp.com/" target="_blank">Live Demo</a>
@@ -13,6 +13,7 @@
   </p>
 </p>
 
+![Screenshot](/screenshots/01.png)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -32,7 +33,10 @@ This project is my own portfolio with all my information about my experience, ed
 * [CSS](https://www.w3.org/Style/CSS/)
 * [Bootstrap](https://getbootstrap.com/)
 * [JavaScript](https://www.javascript.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Express](https://expressjs.com/)
 * [React](https://reactjs.org/)
+* [Node](https://nodejs.org/)
 
 ### Pre-Installation
   1. npm version 6.13.4 or more

@@ -21,7 +21,9 @@ class Projects extends React.Component {
   async getData() {
     await axios.get('api/projects', { withCredentials: true })
       .then((response) => {
-        this.setState(response.data);
+        this.setState({
+          projects: response.data,
+        });
       })
       .catch(() => {
         this.setState({

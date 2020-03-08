@@ -21,7 +21,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Installation](#installation)
-* [Testing](#testing)
+* [Scripts](#Scripts)
 * [Contact](#Contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -49,9 +49,13 @@ This project is my own portfolio with all my information about my experience, ed
   3. run `npm start`
   7. go to [localhost:3000](http://localhost:3000)
 
-### Testing
+### Scripts
 
-  1. In the root folder run: `npm test`
+  1. `npm start`: Start the app with node.js, express, mongodb with the result of the react built.
+  2. `npm react`: Start only the react app without the back-end.
+  3. `npm build`: Create the main files of the front-end.
+  4. `npm test`: Check the test files of the react app.
+  5. `npm dev`: Similar of "npm start" running with nodemon.
 
 ### Contact
 

@@ -21,6 +21,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Installation](#installation)
+* [Testing](#testing)
 * [Contact](#Contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -47,6 +48,10 @@ This project is my own portfolio with all my information about my experience, ed
   2. cd in to the folder and run `npm install`
   3. run `npm start`
   7. go to [localhost:3000](http://localhost:3000)
+
+### Testing
+
+  1. In the root folder run: `npm test`
 
 ### Contact
 

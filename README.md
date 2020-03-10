@@ -22,6 +22,7 @@
 * [Built With](#built-with)
 * [Installation](#installation)
 * [Scripts](#Scripts)
+* [Future Features](#Future-Features)
 * [Contact](#Contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -56,6 +57,13 @@ This project is my own portfolio with all my information about my experience, ed
   3. `npm build`: Create the main files of the front-end.
   4. `npm test`: Check the test files of the react app.
   5. `npm dev`: Similar of "npm start" running with nodemon.
+
+### Future Features 
+
+  1. Use AWS Store to save images instead github.
+  2. Improve the back-end side.
+  3. Include animations on each Component.
+  4. Improve styling.
 
 ### Contact
 

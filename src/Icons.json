@@ -1,0 +1,19 @@
+{
+  "Skills": {
+    "HTML": "https://img.icons8.com/color/48/000000/html-5.png",
+    "CSS": "",
+    "JavaScript": "https://img.icons8.com/color/48/000000/javascript.png",
+    "React": "",
+    "Redux": "https://img.icons8.com/color/48/000000/redux.png"
+  },
+  "Social": {
+    "email": "https://img.icons8.com/wired/64/000000/email.png",
+    "phone": "https://img.icons8.com/material-sharp/48/000000/phone-not-being-used.png",
+    "location": "https://img.icons8.com/material/48/000000/worldwide-location--v1.png",
+    "facebook": "https://img.icons8.com/color/48/000000/facebook.png",
+    "twitter": "https://img.icons8.com/color/48/000000/twitter.png",
+    "linkedin": "https://img.icons8.com/color/48/000000/linkedin.png",
+    "github": "https://img.icons8.com/material-sharp/48/000000/github.png",
+    "angelList": ""
+  }
+}

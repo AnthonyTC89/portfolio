@@ -25,12 +25,12 @@ class Projects extends React.Component {
     await axios.get('api/icons', { withCredentials: true })
       .then((response) => {
         this.setState({
-          projects: response.data,
+          icons: response.data[0],
         });
       })
       .catch(() => {
         this.setState({
-          projects: Profile.projects,
+          icons: Skills,
         });
       });
   }

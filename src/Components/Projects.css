@@ -26,3 +26,7 @@
 .row-project:last-child {
   padding-bottom: 5rem;
 }
+
+.icon-skill {
+  width: 2rem;
+}

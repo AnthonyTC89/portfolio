@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
 import Slider from './Slider';
+import { Skills } from '../Icons.json';
 import Profile from '../Profile.json';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Projects.css';
@@ -11,14 +12,30 @@ class Projects extends React.Component {
     super(props);
     this.state = {
       projects: Profile.projects,
+      icons: Skills,
     };
   }
 
   componentDidMount() {
-    this.getData();
+    this.getProjects();
+    this.getIcons();
   }
 
-  async getData() {
+  async getIcons() {
+    await axios.get('api/icons', { withCredentials: true })
+      .then((response) => {
+        this.setState({
+          projects: response.data,
+        });
+      })
+      .catch(() => {
+        this.setState({
+          projects: Profile.projects,
+        });
+      });
+  }
+
+  async getProjects() {
     await axios.get('api/projects', { withCredentials: true })
       .then((response) => {
         this.setState({
@@ -33,7 +50,7 @@ class Projects extends React.Component {
   }
 
   render() {
-    const { projects } = this.state;
+    const { projects, icons } = this.state;
     return (
       <section id="Projects" className="container">
         <h2 className="header-projects">Projects</h2>
@@ -48,6 +65,13 @@ class Projects extends React.Component {
               </div>
               <div className="col-12 col-sm-6 info-project">
                 <h3>{proj.title}</h3>
+                <ul className="icon-list">
+                  {proj.skills.map((s) => (
+                    <li>
+                      <img src={icons[s]} alt="icon-skill" className="icon-skill" />
+                    </li>
+                  ))}
+                </ul>
                 <p>{proj.description}</p>
                 <div>
                   <a className="link" href={proj.live} target="_blank" rel="noopener noreferrer">

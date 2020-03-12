@@ -1,10 +1,17 @@
 {
   "Skills": {
     "HTML": "https://img.icons8.com/color/48/000000/html-5.png",
-    "CSS": "",
+    "CSS": "https://img.icons8.com/color/50/000000/css3.png",
+    "Bootstrap": "https://img.icons8.com/color/48/000000/bootstrap.png",
     "JavaScript": "https://img.icons8.com/color/48/000000/javascript.png",
-    "React": "",
-    "Redux": "https://img.icons8.com/color/48/000000/redux.png"
+    "nodeJS": "https://img.icons8.com/color/48/000000/nodejs.png",
+    "React": "https://img.icons8.com/plasticine/100/000000/react.png",
+    "Redux": "https://img.icons8.com/color/48/000000/redux.png",
+    "MongoDB": "https://img.icons8.com/color/48/000000/mongodb.png",
+    "PHP": "https://img.icons8.com/officel/40/000000/php-logo.png",
+    "Ruby": "https://img.icons8.com/officel/16/000000/ruby-programming-language.png",
+    "RoR": "https://icon-library.net//images/rails-icon/rails-icon-23.jpg",
+    "PostgreSQL": "https://img.icons8.com/color/48/000000/postgreesql.png"
   },
   "Social": {
     "bigEmail": "https://img.icons8.com/clouds/100/000000/email.png",

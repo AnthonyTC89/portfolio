@@ -6,6 +6,7 @@ import Experience from '../Components/Experience';
 import Projects from '../Components/Projects';
 import Education from '../Components/Education';
 import Footer from '../Components/Footer';
+import Contact from '../Components/Contact';
 
 const Home = () => (
   <>
@@ -16,6 +17,7 @@ const Home = () => (
       <Projects />
       <Experience />
       <Education />
+      <Contact />
       <Footer />
     </main>
   </>

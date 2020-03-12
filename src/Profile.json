@@ -78,5 +78,10 @@
       "grade": "Web Developer",
       "goals": "Full-Stack Development"
     }
-  ]
+  ],
+  "contact": {
+    "title": "Contact Me",
+    "subTitle": "I'd like to hear from you",
+    "text": ""
+  }
 }

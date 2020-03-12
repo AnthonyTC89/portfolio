@@ -1,0 +1,12 @@
+.row-contact {
+  padding: 5rem 0;
+}
+
+form {
+  width: 80%;
+}
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

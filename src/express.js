@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 
+const iconsRoutes = require('./routes/icons');
 const informationRoutes = require('./routes/information');
 const aboutMeRoutes = require('./routes/aboutMe');
 const experienceRoutes = require('./routes/experience');
@@ -22,6 +23,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
+app.use(iconsRoutes);
 app.use(informationRoutes);
 app.use(aboutMeRoutes);
 app.use(experienceRoutes);

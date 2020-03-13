@@ -9,6 +9,7 @@ const aboutMeRoutes = require('./routes/aboutMe');
 const experienceRoutes = require('./routes/experience');
 const educationRoutes = require('./routes/education');
 const projectsRoutes = require('./routes/projects');
+const sendEmailRoutes = require('./routes/sendEmail');
 
 // eslint-disable-next-line
 const { mongoose } = require('./database');
@@ -23,6 +24,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
+app.use(sendEmailRoutes);
 app.use(iconsRoutes);
 app.use(informationRoutes);
 app.use(aboutMeRoutes);

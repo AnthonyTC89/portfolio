@@ -1,5 +1,5 @@
 import React from 'react';
-import sgMail from '@sendgrid/mail';
+import axios from 'axios';
 import { Social } from '../Icons.json';
 import { contact } from '../Profile.json';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,6 +12,8 @@ class Contact extends React.Component {
       to: '',
       text: '',
       btnLoading: false,
+      msg: '',
+      status: '',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,39 +25,36 @@ class Contact extends React.Component {
     });
   }
 
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault();
     const { to, text } = this.state;
-    const msg = {
-      to,
-      from: 'ptonyptc@gmail.com',
-      subject: 'Portfolio Reply',
-      text,
-    };
+    const params = { to, text };
     this.setState({
       btnLoading: true,
+      msg: '',
+      status: '',
     });
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    sgMail.send(msg)
-      .then(() => {
+
+    await axios.post('sendEmail', { params }, { timeout: 5000 })
+      .then((res) => {
         this.setState({
           to: '',
           text: '',
+          btnLoading: false,
+          msg: 'Email sent.',
+          status: res.status,
         });
       })
       .catch(() => {
-        // eslint-disable-next-line no-console
-        console.log('Error');
-      })
-      .finally(() => {
         this.setState({
           btnLoading: false,
+          msg: 'Error, check your connection.',
         });
       });
   }
 
   render() {
-    const { to, text, btnLoading } = this.state;
+    const { to, text, btnLoading, msg, status } = this.state;
     return (
       <div className="container">
         <div className="row row-contact">
@@ -89,6 +88,12 @@ class Contact extends React.Component {
               <button className="btn btn-primary" type="submit">
                 {btnLoading ? 'Sending...' : 'Send'}
               </button>
+              <small className={status === 200
+                ? 'msg-contact text-success'
+                : 'msg-contact text-danger'}
+              >
+                {msg}
+              </small>
             </form>
           </section>
         </div>

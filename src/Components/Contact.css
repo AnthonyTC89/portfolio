@@ -10,3 +10,7 @@ form {
   align-items: center;
   justify-content: center;
 }
+
+.msg-contact {
+  display: block;
+}

@@ -8,7 +8,8 @@ router.post('/sendEmail', async (req, res) => {
   const from = 'ptonyptc@gmail.com';
   const subject = 'Portfolio - autoReply';
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msgReply = { to,
+  const msgReply = {
+    to,
     from,
     subject,
     text: 'Thank you for writting, I will contact to you as soon as possible.' };

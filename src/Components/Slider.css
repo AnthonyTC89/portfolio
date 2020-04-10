@@ -20,21 +20,31 @@
   opacity: 0;
 }
 
-.img-slide {
-  max-width: 19.6rem;
-  max-height: 10.8rem;
+.img-slide-screen {
+  max-width: 60%;
+  max-height: 20rem;
   position: absolute;
   z-index: 1;
-  left: 6.6rem;
-  top: 6rem;
+  left: 20%;
+  top: 22%;
 }
 
 .img-slide-mobile {
-  max-width: 100%;
+  max-width: 36%;
   max-height: 20rem;
+  position: absolute;
+  z-index: 1;
+  left: 32%;
+  top: 15%;
 }
 
 .img-screen {
   position: relative;
   width: 100%;
+}
+
+.img-phone {
+  position: relative;
+  width: 100%;
+  max-height: 30rem;
 }

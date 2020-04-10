@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import uuidv4 from 'uuid/v4';
 import PropTypes from 'prop-types';
 import screen from '../Images/screen.jpg';
+import phone from '../Images/phone.jpg';
 import './Slider.css';
 
 class Slider extends React.Component {
@@ -39,12 +40,14 @@ class Slider extends React.Component {
       <TransitionGroup className="slide-container" onClick={this.handleClick}>
         <CSSTransition key={uuidv4()} timeout={1000} classNames="slide">
           <img
-            className={mobile ? 'img-slide-mobile' : 'img-slide'}
+            className={mobile ? 'img-slide-mobile' : 'img-slide-screen'}
             src={images[currentImage]}
             alt="img-screnshot"
           />
         </CSSTransition>
-        {mobile ? null : <img className="img-screen" src={screen} alt="img-scren" />}
+        {mobile
+          ? <img className="img-phone" src={phone} alt="img-scren" />
+          : <img className="img-screen" src={screen} alt="img-scren" />}
       </TransitionGroup>
     );
   }

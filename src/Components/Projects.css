@@ -4,6 +4,11 @@
   margin: 1rem auto;
 }
 
+.img-project {
+  position: relative;
+  width: 100%;
+}
+
 .info-project {
   width: 50%;
   display: flex;

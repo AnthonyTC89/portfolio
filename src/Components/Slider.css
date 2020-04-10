@@ -1,5 +1,6 @@
 .slide-container {
   cursor: pointer;
+  position: relative;
 }
 
 .slide-enter {
@@ -20,6 +21,20 @@
 }
 
 .img-slide {
-  max-width: 90%;
+  max-width: 19.6rem;
+  max-height: 10.8rem;
+  position: absolute;
+  z-index: 1;
+  left: 6.6rem;
+  top: 6rem;
+}
+
+.img-slide-mobile {
+  max-width: 100%;
   max-height: 20rem;
+}
+
+.img-screen {
+  position: relative;
+  width: 100%;
 }

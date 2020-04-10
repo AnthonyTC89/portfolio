@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import uuidv4 from 'uuid/v4';
 import Slider from './Slider';
-import { Skills } from '../Icons.json';
 import Profile from '../Profile.json';
+import { Skills } from '../Icons.json';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Projects.css';
 
@@ -60,9 +60,9 @@ class Projects extends React.Component {
           }
           return (
             <article key={uuidv4()} className="row row-project">
-              <div className="col-12 col-sm-6">
-                <Slider images={proj.screenshots} />
-              </div>
+              <picture className="col-12 col-sm-6">
+                <Slider images={proj.screenshots} mobile={proj.mobile} />
+              </picture>
               <div className="col-12 col-sm-6 info-project">
                 <h3>{proj.title}</h3>
                 <ul className="icon-list">

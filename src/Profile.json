@@ -41,6 +41,7 @@
         "https://raw.githubusercontent.com/AnthonyTC89/react-rails-events/develop/screenshots/02.png"
       ],
       "pinned": true,
+      "mobile": true,
       "skills": ["React", "Redux", "RoR", "Bootstrap"]
     },
     {
@@ -53,6 +54,7 @@
         "https://raw.githubusercontent.com/AnthonyTC89/odonto_app_uap/develop/screenshots/02.png"
       ],
       "pinned": true,
+      "mobile": false,
       "skills": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP"]
     },
     {
@@ -65,6 +67,7 @@
         "https://raw.githubusercontent.com/AnthonyTC89/react_calculator/develop/screenshots/02.png"
       ],
       "pinned": true,
+      "mobile": false,
       "skills": ["React", "Bootstrap"]
     }
   ],

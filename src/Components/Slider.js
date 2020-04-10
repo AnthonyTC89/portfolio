@@ -2,6 +2,7 @@ import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import uuidv4 from 'uuid/v4';
 import PropTypes from 'prop-types';
+import screen from '../Images/screen.jpg';
 import './Slider.css';
 
 class Slider extends React.Component {
@@ -33,12 +34,17 @@ class Slider extends React.Component {
 
   render() {
     const { currentImage } = this.state;
-    const { images } = this.props;
+    const { images, mobile } = this.props;
     return (
       <TransitionGroup className="slide-container" onClick={this.handleClick}>
         <CSSTransition key={uuidv4()} timeout={1000} classNames="slide">
-          <img className="img-slide" src={images[currentImage]} alt="img-screnshot" />
+          <img
+            className={mobile ? 'img-slide-mobile' : 'img-slide'}
+            src={images[currentImage]}
+            alt="img-screnshot"
+          />
         </CSSTransition>
+        {mobile ? null : <img className="img-screen" src={screen} alt="img-scren" />}
       </TransitionGroup>
     );
   }
@@ -46,6 +52,7 @@ class Slider extends React.Component {
 
 Slider.propTypes = {
   images: PropTypes.array.isRequired,
+  mobile: PropTypes.bool.isRequired,
 };
 
 export default Slider;
